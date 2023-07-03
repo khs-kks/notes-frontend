@@ -1,12 +1,12 @@
-import Note from "./components/Note"
+import Note from './components/Note'
 import { useState, useEffect, useRef } from 'react'
 import noteService from './services/notes'
 import Notification from './components/Notification'
 import Footer from './components/Footer'
 import loginService from './services/login'
-import LoginForm from "./components/LoginForm"
-import NoteForm from "./components/NoteForm"
-import Togglable from "./components/Togglable"
+import LoginForm from './components/LoginForm'
+import NoteForm from './components/NoteForm'
+import Togglable from './components/Togglable'
 
 const App = () => {
 
@@ -20,7 +20,7 @@ const App = () => {
   const [password, setPassword] = useState('')
   const [user, setUser] = useState(null)
 
-  const noteFormRef = useRef();
+  const noteFormRef = useRef()
 
   useEffect(() => {
     const loggedUserJSON = window.localStorage.getItem('loggedNoteappUser')
@@ -155,4 +155,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default App
